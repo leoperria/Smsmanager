@@ -1,0 +1,26 @@
+<?php $this->layout()->css="layout1.css"?>
+<?php echo $this->doctype("XHTML1_STRICT")."\n"?>
+<html>
+<?php echo $this->render("head.phtml")?>
+<body>
+  <div id="theframe">
+    <div id="header">
+      <?php echo $this->render("header_adv.phtml")?>
+      <?php echo $this->render("horizontal_menu.phtml")?>
+    </div>
+    <div id="content">
+       <div id="leftcol">
+          <?php echo $this->render("vertical_menu.phtml")?>
+          <?php echo $this->render("homepage_contactform.phtml")?>
+       </div>
+       <div id="centercol">
+          <?php echo $this->layout()->content;?>
+          <div style="clear:both"></div>
+       </div>
+       <div id="footer"></div>   
+    </div>
+    <div id="postfooter"><?php echo $this->render("footer.phtml")?></div>
+  </div>
+<?php echo $this->render("analytics.phtml");?>
+</body>
+</html>

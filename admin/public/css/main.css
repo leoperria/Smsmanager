@@ -1,0 +1,613 @@
+.x-grid3-cell-inner, .x-grid3-hd-inner {
+	white-space: 	normal !important;
+}
+.grid-checkbox-selected {
+  background-color:transparent;
+  background-image:url(icons/checked.gif)!important;
+  background-repeat:no-repeat;
+  margin:0px;
+  padding:0px;
+  height:18px;
+  width:18px;
+}
+.grid-checkbox-unselected {
+  background-color:transparent;
+  background-image:url(icons/uncheck.gif)!important;
+  margin:0px;
+  padding:0px;
+  background-repeat:no-repeat;
+  height:18px;
+  width:18px;
+}
+/* FIELD OVERRIDE CSS*/
+.x-form-append { float: left; padding-right: 3px; }
+.x-form-helptext { clear: both; font-size: 9px; color: #666; }
+
+/* HEADER */
+
+.header_container{
+	background:url(images/repeatx.jpg);
+  background-repeat:repeat-x;
+	}
+.header_logo{
+  height:86px;
+  background:url(images/logo.jpg) no-repeat;
+  position:relative;
+}
+
+.header_omicron{
+	position:absolute;
+	right:15px;
+	top:47px;
+	height:20px;
+	width:300px;
+	text-align:right;
+	font-size:9px;
+	font-family:Verdana;
+	color:#333;
+}
+.header_omicron a{
+	font-size:10px;
+	text-decoration:none;
+	font-weight:bold;
+	color:#333;
+}
+.cassa_information{
+	background:url(images/repeatx.jpg);
+  background-repeat:repeat-x;
+  color:#444;
+  font-family:verdana;
+  text-align:right;
+  padding-right:10px;
+  padding-top:5px;
+  font-size:12px;
+  font-weight:bold;
+  height:40px;
+	}
+.omicrontoolbar-border-top{
+	border-color:#CDCDCD !important;
+}
+/****** VARIAZIONI SUL THEME ******/
+.ext-el-mask{
+   -moz-opacity:0.0;
+   opacity:0.00;
+   filter:alpha(opacity=0);
+   background-color:#fff;
+}
+
+
+/***** LOADING *****/
+
+.loading-indicator {
+    font-size:11px;
+    background-image:url('../../resources/images/default/grid/loading.gif');
+    background-repeat: no-repeat;
+    background-position:top left;
+    padding-left:20px;
+  height:18px;
+  text-align:left;
+}
+
+#loading-mask{
+  position:absolute;
+  left:0;
+  top:0;
+    width:100%;
+    height:100%;
+    z-index:20000;
+    background-color:white;
+}
+#loading{
+  position:absolute;
+  left:45%;
+  top:40%;
+  padding:5px;
+  z-index:50001;
+    height:auto;
+      background:white;
+    border:1px dotted #bbb;
+}
+#loading img {
+    margin-bottom:5px;
+}
+#loading .loading-indicator{
+  background:white;
+  color:#555;
+  font:bold 13px tahoma,arial,helvetica;
+  padding:10px;
+  margin:0;
+    text-align:center;
+    height:auto;
+}
+
+
+/******* Pagina di Login ******/
+
+#login_box{
+	margin:0 auto;
+	width:500px;
+	height:300px;
+	background:url(images/logo.jpg) no-repeat;
+	padding:0px;
+	font:12px Century Gothic,Comic Sans MS,Verdana;
+	
+}
+
+#login_box form{
+	padding-top:140px;
+	
+}
+
+#login_box table td{
+	height:25px;
+	font-weight:bold;
+}
+
+#error_box{
+	margin:0 auto;
+	width:325px;
+	height:30px;
+	padding:10px;
+	text-align:center;
+	font-weight:bold;
+	font-size:14px;
+	color:#990000;
+}
+
+.border_dotted{
+  border:3px dotted #777;
+}
+	
+	
+	
+/****** UX CELLACTIONS *****/
+	
+.ux-cell-value {
+	position:relative;
+	zoom:1;
+}
+.ux-cell-actions {
+	position:absolute;
+	right:0;
+	top:-2px;
+}
+.ux-cell-actions-left {
+	left:0;
+	top:-2px;
+}
+.ux-cell-action {
+	width:16px;
+	height:16px;
+	float:left;
+	cursor:pointer;
+	margin: 0 0 0 4px;
+}
+.ux-cell-actions-left .ux-cell-action {
+	margin: 0 4px 0 0;
+}
+
+
+/*********** UPLOAD *******/
+.ext-ux-uploaddialog-addbtn
+{
+	background: url('icons/add.png') no-repeat left center !important;
+}
+
+.ext-ux-uploaddialog-removebtn
+{
+	background: url('icons/cancel.png') no-repeat left center !important;
+}
+
+.ext-ux-uploaddialog-resetbtn
+{
+	background: url('icons/cross.png') no-repeat left center !important;
+}
+
+.ext-ux-uploaddialog-uploadstartbtn
+{
+	background: url('icons/arrow_up.png') no-repeat left center !important;
+}
+
+.ext-ux-uploaddialog-uploadstopbtn
+{
+	background: url('icons/stop.png') no-repeat left center !important;
+}
+
+.ext-ux-uploaddialog-indicator-stoped
+{
+	width: 16px;
+	height: 16px;
+	background: url('icons/done.gif') no-repeat center center;
+}
+
+.ext-ux-uploaddialog-indicator-processing
+{
+	width: 16px;
+	height: 16px;	
+	background: url('icons/loading.gif') no-repeat center center;
+}
+
+.ext-ux-uploaddialog-state
+{
+	text-align: center;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/* Queued */
+.ext-ux-uploaddialog-state-0
+{
+	background-image: url('icons/uncheck.gif');
+}
+
+/* Finished */
+.ext-ux-uploaddialog-state-1
+{
+	background-image: url('icons/checked.gif');
+}
+
+/* Failed */
+.ext-ux-uploaddialog-state-2
+{
+	background-image: url('icons/exclamation.png');
+}
+
+/* Processing */
+.ext-ux-uploaddialog-state-3
+{
+	background-image: url('icons/file-uploading.gif');	
+}
+
+/* Progress bar fix */
+.ext-ie7 .ext-ux-uploaddialog-dialog .x-progress-bar .x-progress-text div
+{
+	display: none;
+}
+
+.ext-ie7 .ext-ux-uploaddialog-dialog .x-progress-text-back
+{
+	position: absolute;
+	left: 0px;
+	right: 0px;
+}
+
+.ext-ie7 .ext-ux-uploaddialog-dialog .x-progress-text-back div
+{
+	width: auto !important;
+	white-space: nowrap;
+}
+
+.x-menu-sep {
+	height:1px;
+	}
+	
+	
+
+/********** MSG-DIV **********/
+.msg .x-box-mc {
+  font-size: 14px;
+}
+
+#msg-div {
+  position: absolute;
+  right: 20px;
+  top: 116px;
+  width: 250px;
+  z-index: 20000;
+}
+
+
+/************* GRID DD ********/
+.grid-row-insert-below {
+    border-bottom:1px dotted #3366cc;
+}
+.grid-row-insert-above {
+    border-top:1px dotted #3366cc;
+}
+
+
+/************* GRID ICON************/
+.cspark-grid-icon {
+  float:left;
+  min-width:16px;
+  height:16px;
+  background-repeat:no-repeat;
+  margin: 0 5px 0 0;
+  overflow:hidden;
+}
+.ext-ie .cspark-grid-icon {
+  width:16px;
+}
+.ext-ie .cspark-grid-icon {
+  width:auto;
+}
+.cspark-grid-icon span {
+  vertical-align:middle;
+  padding:0 0 0 20px;
+  line-height:18px;
+}
+.ext-ie .cspark-grid-icon span {
+  width:auto;
+}
+/*************** UX CELLACTIONS **************/
+.ux-cell-value {
+	position:relative;
+	zoom:1;
+}
+.ux-cell-actions {
+	position:absolute;
+	right:0;
+	top:-2px;
+}
+.ux-cell-actions-left {
+	left:0;
+	top:-2px;
+}
+.ux-cell-action {
+	width:16px;
+	height:16px;
+	float:left;
+	cursor:pointer;
+	margin: 0 0 0 4px;
+}
+.ux-cell-actions-left .ux-cell-action {
+	margin: 0 4px 0 0;
+}
+
+.x-combo-list-item-pref{
+	color:green;
+}
+
+/**************** ROWACTIONS ****************/
+
+.ux-row-action-cell .x-grid3-cell-inner {
+	padding:1px 0 0 0;
+}
+.ux-row-action-item {
+	float:left;
+	min-width:16px;
+	height:16px;
+	background-repeat:no-repeat;
+	margin: 0 5px 0 0;
+	cursor:pointer;
+	overflow:hidden;
+}
+.ext-ie .ux-row-action-item {
+	width:16px;
+}
+.ext-ie .ux-row-action-text {
+	width:auto;
+}
+.ux-row-action-item span {
+	vertical-align:middle;
+	padding:0 0 0 20px;
+	line-height:18px;
+}
+.ext-ie .ux-row-action-item span {
+	width:auto;
+}
+.ux-grid3-row-action-cell .x-grid3-cell-inner {
+    padding: 1px 0 0 0;
+}
+.ux-grid3-row-action-cell .x-grid3-cell-inner div {
+    background-repeat:no-repeat;
+    width:16px;
+    height:16px;
+    cursor:pointer;
+}
+/* styles for groups */
+.x-grid-group-hd div {
+	position:relative;
+	height:16px;
+}
+.ux-grow-action-item {
+	min-width:16px;
+	height:16px;
+	background-repeat:no-repeat;
+	background-position: 0 50% ! important;
+	margin: 0 0 0 4px;
+	padding: 0 ! important;
+	cursor:pointer;
+	float:left;
+}
+.ext-ie .ux-grow-action-item {
+	width:16px;
+}
+.ux-action-right {
+	float:right;
+	margin: 0 3px 0 2px;
+	padding: 0 ! important;
+}
+.ux-grow-action-text {
+	padding: 0 ! important;
+	margin:0 ! important;
+	background:transparent none ! important;
+	float:left;
+}
+
+.icon-key {background-image:url('icons/key.png') ! important;}
+.icon-lock{background-image:url('icons/lock.png') ! important;}
+.icon-edit{ background-image:url(icons/pencil.png) ! important; }
+.icon-delete{ background-image:url(icons/delete.png) ! important; }
+.icon-accept{ background-image:url(icons/accept.png) ! important; }
+.icon-refuse{ background-image:url(icons/cancel.png) ! important; }
+.icon-restore{ background-image:url(icons/page_refresh.png) ! important; }
+.icon-magnifier{background-image:url(icons/magnifier.png) ! important;}
+.icon-shield{background-image:url(icons/shield.png) ! important;}
+.icon-detail{background-image:url(icons/application_form_magnify.png) ! important;}
+.icon-download-backup{background-image:url(icons/disk.png)! important;}
+.icon-cartelle{background-image:url(icons/folder.png) ! important;}
+.icon-datario{background-image:url(icons/date.png) ! important;}
+.icon-riepilogo{background-image:url(icons/application_view_list.png) ! important;}
+.icon-lista{background-image:url(icons/application_side_list.png) ! important;}
+.icon-apri-lettera{background-image:url(icons/email_go.png) !important;}
+.icon-rispondi-lettera{background-image:url(icons/email_edit.png) !important;}
+.goldmanager-help-icon { background: url(icons/help.png) 0 6px no-repeat !important;} 
+.grid-comunicazione-nuova {
+  background-color:transparent;
+  background-image:url('icons/email.png');
+  background-repeat:no-repeat;
+  height:18px;
+  width:18px;
+}
+.grid-comunicazione-letta {
+  background-color:transparent;
+  background-image:url('icons/email_open.png');
+  background-repeat:no-repeat;
+  height:18px;
+  width:18px;
+}
+.grid-comunicazione-globale {
+  background-color:transparent;
+  background-image:url('icons/email_error.png');
+  background-repeat:no-repeat;
+  height:18px;
+  width:18px;
+}
+.label_panel{
+	height:32px;
+	background:url(images/bgwintop.jpg);
+  background-repeat:repeat-x;
+}
+.label_panel h1{
+	padding-top:5px;
+	padding-left:5px;
+	font-size:16px;
+	color:#fff;
+	font-weight:bold;
+	font-family:verdana;
+}
+/* FORM  STATIC TEXT FIELD*/
+
+.my-form-statictextfield {
+	background: transparent;
+	border: none;
+	padding-top: 2px !important;
+	padding-bottom: 2px !important;
+	color: #333;
+}
+/************ BOX SELECT LIKE FACEBOOK *****************/
+ul.holder {
+	margin: 0; 
+	overflow: hidden; 
+	height: auto ! important; 
+}
+ul.holder li { 
+	float: left; 
+	display: inline; 
+	list-style-type: none; 
+	margin: 3px 2px 2px 1px; 
+	line-height: 1em; 
+	-moz-user-select: none
+}
+body.ext-ie7 ul.holder li {
+	margin: 3px 0 2px 3px;
+	line-height: 1.2em;
+	padding-bottom: 2px
+}
+body.ext-ie6 ul.holder li {
+	margin: 2px 0 2px 3px;
+	line-height:1.1em;
+	padding-bottom: 2px
+}
+body.ext-gecko ul.holder li {
+	margin: 1px 0 2px 3px;
+}
+ul.holder li.bit-box { 
+	position:relative; 
+	-moz-border-radius: 6px; 
+	-webkit-border-radius: 6px; 
+	border-radius: 6px; 
+	border: 1px solid #CAD8F3; 
+	background: #DEE7F8; 
+	padding: 1px 15px 1px 5px; 
+}
+ul.holder li.bit-hover {
+	background: #BBCEF1; 
+	border: 1px solid #6D95E0;
+}
+ul.holder li.bit-box-focus { 
+	border-color: #598BEC; 
+	background: #598BEC; 
+	color: #fff;
+}
+ul.holder li.bit-input{}
+ul.holder li.bit-input input {
+	margin: 1px 0 2px 0; 
+	border: 0; 
+	outline: 0; 
+	padding: 0;
+}
+ /* no left/right padding here please */
+ulul.holder li.bit-input input.smallinput {
+	width: 20px;
+}
+.holder li.bit-box a.closebutton { 
+	position: absolute; 
+	right: 4px; 
+	top: 5px; 
+	display: block; 
+	width: 7px; 
+	height: 7px; 
+	font-size: 1px; 
+	background: url(icons/close.gif);
+}
+ul.holder li.bit-box a.closebutton:hover { 
+	background-position: 7px;
+}
+ul.holder li.bit-box-focus a.closebutton, ul.holder li.bit-box-focus a.closebutton:hover { 
+	background-position: bottom;
+}
+li.bit-input input{
+	background:none;
+}
+.thumb{
+	padding-left:5px;
+}
+.thumb-wrap{
+	height:90px;
+	width:90px;
+}
+/**
+* GRID SUMMARY
+*/
+.x-grid3-summary-row {
+    border-left:1px solid #fff;
+    border-right:1px solid #fff;
+    color:#333;
+    background: #f1f2f4;
+}
+.x-grid3-summary-row .x-grid3-cell-inner {
+    font-weight:bold;
+    padding-bottom:4px;
+}
+.x-grid3-cell-first .x-grid3-cell-inner {
+    padding-left:16px;
+}
+.x-grid-hide-summary .x-grid3-summary-row {
+    display:none;
+}
+.x-grid3-summary-msg {
+    padding:4px 16px;
+    font-weight:bold;
+}
+
+/*HELP PERMESSI*/
+div.help_container{
+	padding:10px 10px;
+	height:480px;
+	overflow:auto;
+}
+div.help_container p{
+	padding-top:3px;
+}
+ul.lista_help{
+	padding-left:5px;
+	padding-right:5px;
+	border-bottom:1px solid #555;
+}
+ul.lista_help li{
+	padding-top:3px;
+	padding-bottom:3px;
+	font-size:9px;
+}

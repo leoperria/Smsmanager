@@ -1,0 +1,7 @@
+<ul id="menu_bar"> 
+  <li class="<?=$this->menu_item=="home"?"selected":""?>"><a href="<?=$this->url(array("action"=>"index"),"default")?>">Home</a></li>
+  <li class="<?=$this->menu_item=="servizio"?"selected":""?>"><a href="<?=$this->url(array("action"=>"servizio"),"default")?>">Il servizio</a></li> 
+  <!--<li class="<?=$this->menu_item=="demo"?"selected":""?>"><a href="<?=$this->url(array("action"=>"demo"),"default")?>">Demo</a></li>  --> 
+  <li class="last <?=$this->menu_item=="contatti"?"selected":""?>"><a href="<?=$this->url(array("action"=>"contatti"),"default")?>">Contatti</a></li> 
+</ul>
+

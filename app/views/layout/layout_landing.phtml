@@ -1,0 +1,21 @@
+<?php $this->layout()->css="layout_landing.css"?>
+<?php echo $this->doctype("XHTML1_STRICT")."\n"?>
+<html>
+<?php echo $this->render("head.phtml")?>
+<body>
+  <div id="theframe">
+    <div id="header">
+  
+    </div>
+    <div id="content">
+       <div id="centercol" style="border:1px solid red">
+          <?php echo $this->layout()->content;?>
+          <div style="clear:both"></div>
+       </div>
+       <div id="footer"></div>   
+    </div>
+    <div id="postfooter"><?php echo $this->render("footer.phtml")?></div>
+  </div>
+<?php echo $this->render("analytics.phtml");?>
+</body>
+</html>

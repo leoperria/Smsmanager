@@ -1,0 +1,595 @@
+/** CSS RESET HTML 
+  Verde acido #44B71C
+  Colori utilizzabili : 
+    scale di verde: #276B10; #ABB81C; #646B10;
+    Grigio: #474747;#B8B8B8;
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+/* remember to define focus styles! */
+:focus {
+  outline: 0;
+}
+
+body {
+  line-height:1;
+  color: #474747;
+  background: white;
+  font-family:verdana;
+  font-size:12px;
+  
+}
+ol, ul {
+  list-style: none;
+}
+/* tables still need 'cellspacing="0"' in the markup */
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+}
+blockquote, q {
+  quotes: "" "";
+}
+
+strong {
+	font-weight:bold;
+	}
+
+/* #44B71C verde acido */
+a{
+ color:#44B71C;
+ text-decoration:none;
+}
+
+a:hover{
+ /*text-decoration:underline;*/
+ color:#ABB81C;
+}
+
+li{
+  padding-bottom:0.4em;
+  }
+
+p {
+  margin-bottom:0.5em;
+}
+  
+ul{
+  padding-top:10px;
+  padding-left:22px;
+}
+
+ul, li{
+   list-style-type:disc;
+  }
+
+h1{
+	padding-bottom:0.8em;
+	line-height:1.2em;
+	font-weight:bold;
+	font-family:Century Gothic;
+	}
+
+h2{
+  font-family:arial;
+  font-size:16px;
+  font-weight:bold;
+  color:#333333;
+  line-height:17px;
+  padding-bottom:0.5em;
+}
+
+em{
+  font-style: italic;
+}
+.niceimg{
+  padding:2px;
+  border:1px solid #ddd;
+  }
+  
+.racq{
+  background-image:url(img/racquo.jpg);
+  width:20px;
+  }
+
+
+
+/******************************** LAYOUT ***/
+	
+#theframe {
+  width:1040px;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+#header {
+  width:1040px;
+  height:175px;
+  background-image:url(img/header.jpg);
+  position:relative;
+}
+
+#leftcol{
+	width:200px;
+	margin-left:20px;
+	float:left;
+	display:inline;
+}
+
+#centercol{
+  margin-left:240px;
+  width:695px;
+  padding-left:20px;
+  padding-right:10px;
+  padding-bottom:20px;
+ /* font-family:georgia,times,arial;*/
+  font-family:verdana;
+  font-size:12px;
+  font-weight:400;
+  font-style:normal;
+  line-height:18px;
+  }
+  
+#footer {
+  background-image:url(img/footer.gif);
+  background-repeat:no-repeat;
+  width:1040px;
+  height:34px;
+  position:relative;
+  left:-20px;
+  
+}
+
+#postfooter{
+  font-size:10px;
+  padding-left:30px;
+  text-align:center;
+  top:-10px;
+  left:-25px;
+  position:relative;
+  height:40px;
+  /*color:#565656;*/
+}
+
+
+#content{
+  width:1000px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:27px;
+  background-image:url(img/bg.jpg);
+  background-repeat:repeat-y;
+  color: #474747;
+}
+
+/** HOME PAGE **/
+
+div.postit{
+  width:210px;
+  height:165px;
+  background-image:url(img/postit.jpg);
+  background-repeat:no-repeat;
+  padding-top:35px;
+  padding-right:15px;
+  padding-left:20px;
+  font-family:Verdana;
+  font-size:10px;
+}
+
+h2.legge69{
+	text-indent:-10000px;
+}
+	
+
+div.italy{
+  width:243px;
+  height:310px;
+  background-image:url(img/italia_mini.jpg);
+  background-repeat:no-repeat;
+}
+
+div.italy a{
+	display:block;
+	}
+
+
+h1.homepage{
+	width:399px;
+	height:59px;
+	text-indent:-10000px;
+	background-image:url(img/h1_homepage.jpg);
+	background-repeat:no-repeat;
+	background-position:0 -5px;
+	}
+.phone_display{
+	margin-top:20px;
+	width:500px;
+	height:100px;
+	float:right;
+	padding:10px;
+	background-image:url(img/display.jpg);
+	background-repeat:no-repeat;
+}
+.phone_display p{
+  padding-top:25px;
+  padding-left:50px;
+}
+.phone_display p a{
+ font-size:18px;
+ color:#474747;
+ font-weight:bold;
+ text-decoration:none;
+}
+
+/*** CONTACT FORM ***/
+.contactform {
+	padding-bottom:40px;
+	background-image:url(img/contactform_down.jpg);
+	background-position:0 bottom;
+	}
+.contactform form {
+  margin-top:10px;
+  background-image:url(img/contactform_up.jpg);
+  background-repeat:repeat-y;
+  width:180px;
+  padding-left:10px;
+  padding-right:10px;
+  padding-top:11px;
+  font-family:Verdana;
+  font-size:10px;
+  line-height:12px;
+  
+}
+.contactform table{
+  margin-top:10px;
+}
+.contactform td{
+  height:24px;
+}
+	
+.contactform td.label{
+  padding-right:10px;
+  font-size:10px;
+}
+
+.contactform .textf1{
+	width:103px;
+	border:1px solid #C6AEAE;
+}
+
+.contactform td.mandatory{
+  padding-left:4px;
+  padding-reight:5px;
+  color:red;
+}
+
+.contact_button{
+	display:block;
+	border:0px;
+	width:131px;
+	height:35px;
+	background-image:url(img/contact_button.jpg);
+	background-repeat:no-repeat;
+	text-indent:-10000px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:10px;
+}
+
+.contact_errors{color:red;}
+
+
+
+
+/** BOX LATERALE ****/
+
+.box{
+	padding-bottom:20px;
+}
+
+.box h2{
+  width:188px;
+  height:19px;
+  font-family:Verdana;
+  font-size:16px;
+  color:white;
+  font-weight:normal;
+  padding:6px 5px 4px 7px;
+  text-indent:-10000px;
+}
+
+
+.box h2#solution{
+  background-image:url(img/box_header_solution.jpg);
+}
+
+
+.box h2#contacts{
+  background-image:url(img/box_header_contacts.jpg);
+}
+
+.box h2#demo{
+  background-image:url(img/box_header_demo.jpg);
+}
+
+
+.box h2#news{
+  background-image:url(img/box_header_news.jpg);
+    width:218px;
+}
+
+.home_news{
+	line-height:1.2em;
+	font-size:10px;
+	padding-top:10px;
+	width:230px;
+	padding-left:3px;
+	padding-bottom:10px;
+	}
+	
+.separator{
+	border-bottom:1px solid lightgray;
+	}
+
+/******** MENU VERTICALE ****/
+
+ul.vertmenu { 
+	padding-top:8px;
+	padding-left:0px;
+	padding-bottom:0px;
+	list-style-type:none;
+}
+
+ul.vertmenu li {
+  list-style-type:none;
+  padding-top:5px;
+  padding-left:6px;
+  padding-bottom:6px;
+  font-family:Trebuchet MS;
+  font-size:13px;
+  color:#666666;
+  background-image:url(img/dotted_line.gif);
+  background-repeat:repeat-x;
+  background-position:0 bottom;	
+}
+
+ul.vertmenu li a.selected{
+  color:#44B71C;
+  font-weight:bold;
+}
+
+ul.vertmenu li ul{
+  padding-left:10px;
+}
+
+ul.vertmenu li ul li{
+  background:none;
+  font-size:11px;
+  padding-top:2px;
+  padding-bottom:5px;
+}
+
+ul.vertmenu li a{
+   color:#605454;
+   text-decoration:none;
+}
+ul.vertmenu li a:hover{
+   /*text-decoration:underline;*/
+   color:#ABB81C;
+}
+	 
+ul.vertmenu h2 a{
+  color:white;
+}
+
+
+
+/*** MENU BAR ****/
+#menu_bar{
+  position:absolute;
+  top:135px;
+  left:25px;
+    list-style-type:none;
+}
+
+#menu_bar li{
+	float:left;
+	 list-style-type:none;
+}
+#menu_bar  li a{
+  text-decoration:none;
+  font-family:Arial;
+  font-size:14px;
+  font-weight:bold;
+  color:#817070;
+  padding-right:20px;
+  margin-right:17px;
+  border-right:1px solid #D0D0CE;
+}
+
+#menu_bar  li.last a{
+  
+  border-right:0px;
+}
+
+#menu_bar  li a:hover{
+	/*text-decoration:underline;*/
+	color:#ABB81C;
+}
+	
+#menu_bar  li.selected a{
+	color:#44B71C;
+}
+
+#menu_bar li.rss a{
+  color:#817070;
+  text-decoration:none;
+  font-family:Arial;
+  font-size:12px;
+  padding-right:23px;
+  background-image:url(img/rss.gif);
+  background-repeat:no-repeat;
+  background-position:right 0px;
+  border:0;
+  font-weight:normal;
+  
+}
+
+
+
+
+/** SEARCHBOX */
+
+#searchbox{
+  position:absolute;
+  top:142px;
+  right:41px;
+  width:187px;
+}
+
+#searchbox input{
+  font-family:verdana;
+  font-size:11px;
+  background-image:url(img/searchbox_bg.gif);
+  background-repeat:repeat-x;
+  float:left;
+
+}
+
+#searchbox a{
+  background-image:url(img/search_button.gif);
+  background-repeat:no-repeat;
+  width:44px;
+  height:24px;
+  text-decoration:none;
+  display:block;
+  float:right;
+  margin-left:5px;
+  position:relative;
+  top:-1px;
+  }
+  
+#searchbox a span{
+  visibility:hidden;
+  
+  }
+
+
+
+
+/** BOTTONI & PULSANTI VARI **/
+a.continue{
+  text-decoration:none;
+  padding-right:10px;
+  padding-left:5px;
+  background-image:url(img/arrow_little.jpg);
+  background-repeat:no-repeat;
+  background-position:right 5px;
+}
+
+#big_phone_number{
+	background-image:url(img/big_phone_number.jpg);
+	width:213px;
+	height:60px;
+	
+	}
+ 
+
+  
+/** MAIN ARTICLE **/
+
+.main_article, .arc_news {
+  font-family:verdana;
+}
+	
+.main_article_body {
+  margin-bottom:50px;
+}
+
+.main_article p, .arc_news p{
+  line-height:1.40em;
+}	
+	
+.main_article h1, .arc_news h1{
+  font-size:26px;
+  font-family:Trebuchet MS;
+  color:#872927;
+  margin-bottom:15px;
+  font-weight:400;	
+}	
+	
+.main_article h2, .arc_news h2{
+  font-size:23px;
+  font-family:Trebuchet MS;
+  color:#333333;
+  margin-bottom:10px;
+  font-weight:400;
+}
+
+.main_article img, .arc_news img {
+  border:1px solid #cccccc;
+  padding:5px 5px;
+  margin:2px 5px;
+}
+.main_article img.left,.main_article img.sinistra,.arc_news img.sinistra{
+  float:left;
+}
+.main_article img.right,.main_article img.destra, .arc_news img.destra{
+  float:right;
+}
+ul.list_homepage{
+  padding: 0px;
+  margin: 0px;
+  list-style-type:none;
+}
+ul.list_homepage li{
+  list-style-type:none;
+  background-image: url(img/pointer.jpg);
+  background-repeat: no-repeat;
+  background-position:0px 4px;
+  padding-left:20px;
+  margin-top:10px;
+}
+
+table.offerta {
+ border_collapse:collapse;
+ margin:0px;
+ width:70%;
+ border:0px;
+}
+table.offerta td.pacchetti{
+ width:250px;
+ height:25px;
+ border-bottom:1px dotted #CECECE;
+}
+table.offerta td.costo{
+ border-bottom:1px dotted #CECECE;
+}
+
+.home_paragraph{
+ font-size:14px;
+}

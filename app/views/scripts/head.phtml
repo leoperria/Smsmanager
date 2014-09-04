@@ -1,0 +1,16 @@
+<head>
+  <meta name="author" content="Omicronmedia - Kinesistemi s.r.l." />
+  <meta name="description" content="Mister SMS - servizio invio sms pubblicitari e informativi" />
+  <meta name="keywords" content="SMS, pubblicità, campagna pubblicitaria, invio multiplo sms, sms informativi" />
+  <meta name="google-site-verification" content="AITiZqBh3MvXbrxyNrEkwpPNJUAX7Bf-7EOgKup6tJQ" />
+  <?php if(isset($this->title)):?>
+  <title><?php echo $this->title ?></title>
+  <?php endif?>
+  <link rel="shortcut icon" href="<?=$this->baseUrl()?>/favicon.ico" />
+  <link rel="stylesheet" type="text/css" media="screen" href="<?=$this->baseUrl()."/css/main.css"?>" />
+  <link rel="stylesheet" type="text/css" media="screen" href="<?=$this->baseUrl()."/css/".$this->layout()->css?>" />
+  <script src="<?=$this->baseUrl()."/js/utils.js"?>" type="text/javascript"></script> 
+  <?php if(isset($_GET["debug"])):?>
+  <link rel="stylesheet" type="text/css" media="screen" href="css/debug.css" />
+  <?php endif?>
+</head>

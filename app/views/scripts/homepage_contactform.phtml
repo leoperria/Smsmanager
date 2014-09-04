@@ -1,0 +1,14 @@
+<div class="box"></tr> 
+  <h2 id="contacts">Contattaci</h2>
+  <div class="contactform">
+    <form method="post" id="formcontatto"> 
+      <p>Inserisci i tuoi dati!</p><p> Ti <b>contatteremo subito</b> per rispondere a qualsiasi domanda riguardante il nostro servizio:</p>
+      <table >
+        <tr><td class="label">Nome:</td><td><input class="textf1" type="text" name="contact_nome" value="<?php echo $this->escape($this->contact_nome)?>" /></td><td class="mandatory">*</td></tr>
+        <tr><td class="label">Email:</td><td><input class="textf1" type="text" name="contact_email" value="<?php echo $this->escape($this->contact_email)?>"/></td><td class="mandatory">*</td></tr>
+        <tr><td class="label" style="vertical-align:top;">Messaggio:</td><td><textarea class="textf1" rows="4" name="contact_messaggio" value="<?php echo $this->escape($this->contact_messaggio)?>"></textarea></td><td class="mandatory">&nbsp;</td></tr>
+      </table>
+      <a href="#" class="contact_button" onclick="javascript:actionSubmit('formcontatto', '<?=$this->url(array("action"=>"mail"),"default")?>');">Continua</a>
+    </form>
+  </div>
+</div>
