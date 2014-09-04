@@ -1,0 +1,40 @@
+<? $baseUrl=$this->app_config["BASE_URL"]; ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+ <link rel="shortcut icon" href="<?=$baseUrl?>/favicon.ico" />
+ <title><?=$this->app_config["PRODUCT_NAME"]?> <?=$this->app_config["PRODUCT_VERSION"]?> - <?=$this->app_config["PRODUCTION"] ? "" : "DEBUG"?></title>
+ <?foreach($this->loader_config["CSS_FILES"] as $cssFile):?>
+ <link rel="stylesheet" type="text/css" href="<?=$baseUrl?><?=$cssFile?>" />
+ <?endforeach?>  
+</head>
+<body>
+   <div id="loading-mask" style=""></div> 
+   <div id="loading">
+     <div class="loading-indicator">
+       <img src="<?=$baseUrl?>/css/images/ajaxindicator27.gif" width="54" height="55" style="margin-right:8px;" />
+       <p style="padding-top:10px">Caricamento...</p>
+     </div>
+   </div>
+   <script type="text/javascript" src="<?=$baseUrl?>/lib/ext3/adapter/ext/ext-base.js"></script>
+ 
+   <?if($this->app_config["PRODUCTION"]):?>
+     <script type="text/javascript" src="<?=$baseUrl?>/lib/ext3/ext-all.js"></script>
+   <?else:?>
+     <script type="text/javascript" src="<?=$baseUrl?>/lib/ext3/ext-all-debug.js"></script>
+   <?endif?>
+   
+   <script type="text/javascript" src="<?=$baseUrl?>/lib/ext3/src/locale/ext-lang-it.js"></script>
+   
+   <?if($this->app_config["PRODUCTION"]):?>
+     <script type="text/javascript" src="<?=$baseUrl?>/jsloader.php"></script>
+   <?else:?>
+     <?foreach($this->loader_config["JAVASCRIPT_FILES"] as $ndx => $file):?>
+       <script type="text/javascript" src="<?=$baseUrl?>/jsloader.php?ndx=<?=$ndx?>&amp;name=<?=$file?>"></script>
+     <?endforeach?>
+   <?endif?>
+   
+   <div style="display:none" ><?=$this->app_config["PRODUCT_NAME"]?></div>
+</body>
+</html>

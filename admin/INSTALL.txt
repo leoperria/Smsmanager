@@ -1,0 +1,23 @@
+INSTALLAZIONE:
+
+1] Creare un database in MYSQL (nome a discrezione del developer)
+2] Utilizzare il file database.sql per creare la base dati di partenza
+3] SE non sono presenti scaricare Zend Framework e Doctrine e metterle nella directory /../lib chiamandole rispettivamente:
+    ZendFramework
+    doctrine
+4] ATTENZIONE:: attualmente il file di configurazione fa riferimento al FW2 considerato anche esso all'esterno della cartella di ROOT del programma
+5] Editare il file config.php che si trova nella cartella ROOT/config/config.php sostituendo gli asterischi(*) e le X con i valori opportuni
+6] Digitare sul browser l'indirizzo relativo all'applicatzione, entrare nella cartella /public e nella pagina di login utilizzare le credenziali di accesso:
+    user: admin
+    password:
+    la pagina dovrebbe ora presentare l'applicazione dal punto di vista admin (developer).
+
+
+   user : esercente
+   password : 
+   Interfaccia esercente
+
+
+   user: dataentry
+   password : 
+   Interfaccia Data entry
